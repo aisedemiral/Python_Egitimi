@@ -1,0 +1,18 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Aug 18 14:23:58 2025
+
+@author: mumineaisedemiral
+"""
+
+# Matematiksel Operatörler
+sayi1= 5
+sayi2=12
+print(sayi1 + sayi2)  #Addition (Toplama)
+print(sayi1 - sayi2)  #Substraction (Çıkartma)
+print(sayi1 * sayi2)  #Multiplication (Çarpma)
+print(sayi1 / sayi2)  #Division (Bölme)
+print(sayi1 % sayi2)  #Modulus (Modül - Mod Alma)
+print(sayi1 ** sayi2) #Exponentiation (Üs Alma)
+print(sayi1 // sayi2) #Flooe Division (Yuvarlama Bölmesi) (İnteger Division - Tam Sayı Bölmesi )
