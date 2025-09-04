@@ -457,14 +457,35 @@ ogrencilerDers = {'Okan': 'Makine Öğrenmesi',
                   'Armağan':{'Bilgisayar Ağları','Doğal Dil İşleme'},
                   'Kaan':{'Makine Öğrenmesi','Doğal Dil İşleme'},
                   'Fatih':[{'Ders Adı':'Veri Tabanı','Hoca':'Gülşah'},
-                           {'Ders Adı':'Doğal Dil İşleme','Hoca':'Burak'}]
-                  
-                  }
+                           {'Ders Adı':'Doğal Dil İşleme',
+                            'Hoca':'Burak'}]}
 
 
+print(ogrencilerDers["Okan"])
+print(ogrencilerDers["Fatih"][0])
+print(ogrencilerDers["Fatih"][1])
+print(ogrencilerDers["Fatih"][0]['Ders Adı'])
 
+baskaSozluk=ogrencilerDers.copy()
+baskaSozluk['Okan']='Matematik'
 
+sozluk1 = dict.fromkeys(["Ali","Ahmet","Aslı"],0)
+print(sozluk1)
 
+print(ogrencilerDers.get('Okan'))
+print(sozluk1.get('Okan','Bu anahtara sahip bir değer bulunamamaktadır.'))
+
+print(ogrencilerDers.items()) # bütün elemanlar tuples şeklinde bastırılır.
+print(ogrencilerDers.keys())  #Anahtar değerleri bastırır.
+print(ogrencilerDers.values()) # değerleri bastırır.
+
+# Pop ile verilern elemanı çıkarırız.
+print(ogrencilerDers)
+ogrencilerDers.pop("Armağan")
+print(30*'-')
+print(ogrencilerDers)
+
+ogrencilerDers.popitem()#lılo metoduna göre çıkarma işlemi yapar yani son elemanı çıkartır.
 
 
 
